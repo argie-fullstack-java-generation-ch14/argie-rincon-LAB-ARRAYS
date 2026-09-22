@@ -9,3 +9,5 @@ for (let i = arr.length - 1; i >= 0; i--) {
     const ele = arr[i];
     console.log(ele);
 }
+
+arr.forEach(elem => console.log(elem))
