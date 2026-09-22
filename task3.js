@@ -31,7 +31,7 @@ missingNum = totalExcpeted - currentTotal;
 
 for (let i = 0; i < arr.length; i++) {
   const current = arr[i];
-  const next = arr[i + 1];
+  const next = arr[i + 1 > arr.length ? i : i + 1];
 
   if (missingNum > current && missingNum < next) {
     arr.splice(i + 1, 0, missingNum)
